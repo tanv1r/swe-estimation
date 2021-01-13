@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 
 \usepackage{fouriernc}
+\usepackage{array} 
 
 \begin{document}
 
@@ -25,6 +26,21 @@
 	\item Increase staff. Or, transfer best staff onto the project.
 	\item Stagger the delivery of different functionality. Or decide that the project is not worth doing after all.
 \end{itemize}
+
+\item Many businesses value predictability more than development time, cost, or flexibility. Be sure you understand what your business values the most.
+
+\item Consider the effect of the Cone of Uncertainty on the accuracy of your estimate. Your estimate cannot have more accuracy that is possible at your project's current position within the Cone. Stages in the Cone are:
+	\begin{enumerate}
+		\item Initial concept.
+		\item Approved product definition.
+		\item Requirements complete.
+		\item User interface design complete.
+		\item Detailed design complete.
+		\item Software complete. 
+	\end{enumerate}
+
+\item Don't assume that the Cone of Uncertainty will narrow itself. You must force the Cone to narrow by removing sources of variability from your project.
+
 \end{enumerate}
 
 \section*{Takeaways}
@@ -46,6 +62,32 @@
 \item Projects that aim from the beginning to have the lowest number of defects usually also have the shortest schedules.
 
 \item A project team that holds its ground and insists on an accurate estimate will improve its credibility within its organization.
+
+\item There are typically 2-hour, 2-day, and 2-week versions of any particular feature.
+
+\item The accuracy of the software estimate depends on the level of refinement of the software's definition. The more refined the definition, the more accurate the estimate.
+
+\item Two approaches to account for the Cone:
+	\begin{enumerate}
+		\item Come up with a ``most likely'' estimate. Then use predefined multipliers to compute ranges.
+				
+				\begin{tabular}{lrrr}
+			\firsthline
+			\multicolumn{3}{r}{Scoping Error} \\
+				\cline{2-4}
+			Phase    & Low Side Error & High Side Error & Error Range \\
+			\hline
+			Initial Concept      & 0.25x (-75\%)    & 4x (+300\%) & 16x      \\
+			Approved Definition       & 0.5x (-50\%)     & 2x (+100\%) & 4x      \\
+			Requirements Complete       & 0.67\% (-33\%)     & 1.5x (+50\%)  & 2.25x     \\
+			UI Design Complete & 0.8x (-20\%)      & 1.25x (+25\%) & 1.6x       \\
+			Detailed Design Complete & 0.9x (-10\%) & 1.1x (+10\%) & 1.2x\\
+\lasthline
+		\end{tabular}
+		
+		\item One person estimates the best-case and worst-case ends of the range and a second person estimate the likelihood that the actual result will fall within that range.
+	\end{enumerate}
+
 \end{itemize}
 
 \end{document}
